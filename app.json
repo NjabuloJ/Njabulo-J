@@ -1,29 +1,42 @@
 {
   "name": "NjabuloJb",
-  "description": "⚡ A savage WhatsApp bot built to dominate P  N .",
-  "keywords": ["NjabuloJb", "WhatsApp Bot", "Multi-Device", "Savage"],
-  "repository": "https://github.com/NjabuloJ/NjabuloJb",
-  "stack": "container",
+  "description": "⚡ A lightning-fast WhatsApp bot with multi-device support, built on Node.js & Baileys.",
+  "website": "https://github.com/NjabuloJ/NjabuloJb#readme",
+  "repository": "https://github.com/NjabuloJ/NjabuloJb.git",
+  "logo": "https://i.ibb.co/mChCjFPL/ad76194e124ff34e.jpg",
+  "success_url": "/",
+  
   "env": {
-    "OWNER_NUMBER": {
-      "description": "📱 Your WhatsApp number (with country code, no +). Who’s runnin’ this show? 💪",
-      "required": true,
-      "value": "26777821911"
+    "SESSION": {
+      "description": "🔑 *Required* – Your WhatsApp session ID (generated after linking the bot).",
+      "required": true
     },
-    "OWNER_NAME": {
-      "description": "👑 Your name, the boss of * N *. Flex it in the bot’s credits! 😎",
-      "required": true,
-      "value": "N "
-    },
-    "PREFIX": {
-      "description": "🔠 Command trigger (e.g., ‘.’ for !ping). Keep it short or look like a clown! 🤡",
-      "required": true,
-      "value": "."
+    "CODE": {
+      "description": "🌍 *Required* – Default country code (e.g., 254 for Kenya).",
+      "value": "254",
+      "required": true
     }
   },
+  
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "description": "🗃️ Free PostgreSQL database for storing bot data."
+    }
+  ],
+  
   "buildpacks": [
     {
-      "url": "heroku/nodejs"
+      "url": "heroku/nodejs",
+      "description": "📦 Node.js runtime for running the bot."
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git",
+      "description": "🖼️ WebP support for image processing."
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest",
+      "description": "🎥 FFmpeg for audio/video processing."
     }
   ]
 }
