@@ -112,14 +112,14 @@ async function start() {
     const Matrix = makeWASocket({
       version,
       logger: pino({ level: "silent" }),
-      browser: ["NjabuloJb", "Chrome", "1.0.0"],
+      browser: ["Njabulo-J", "Chrome", "1.0.0"],
       auth: state,
       getMessage: async (key) => {
         if (store) {
           const msg = await store.loadMessage(key.remoteJid, key.id);
           return msg.message || undefined;
         }
-        return { conversation: "NjabuloJb whatsapp user bot" };
+        return { conversation: "Njabulo-J whatsapp user bot" };
       },
     });
 
@@ -233,7 +233,7 @@ async function start() {
         }
 
         console.log(chalk.green(`•
-• NjabuloJb connected
+• Njabulo-J connected
 •`));
       }
     });
@@ -317,7 +317,7 @@ async function start() {
 start();
 
 app.get("/", (req, res) => {
-  res.send("NjabuloJb is running!");
+  res.send("Njabulo-J is running!");
 });
 
 app.listen(PORT, () => {});
