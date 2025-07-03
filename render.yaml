@@ -1,13 +1,13 @@
 services:
   - type: web
-    name: NjabuloJb
+    name: Njabulo-J
     env: docker
     region: Singapore
     plan: free
     buildCommand: "npm install"
     startCommand: "node index.js"
     dockerfilePath: ./Dockerfile
-    repo: https://github.com/NjabulJ/NjabuloJb
+    repo: https://github.com/NjabuloJ/Njabulo-J
     autoDeploy: true
     envVars:
       - key: SESSION_ID
