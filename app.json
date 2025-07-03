@@ -1,0 +1,29 @@
+{
+  "name": "Njabulo-Jb",
+  "description": "⚡ A savage WhatsApp bot built to dominate P  N .",
+  "keywords": ["Njabulo", "WhatsApp Bot", "Multi-Device", "Savage"],
+  "repository": "https://github.com/NjabuloJ/Njabulo",
+  "stack": "container",
+  "env": {
+    "OWNER_NUMBER": {
+      "description": "📱 Your WhatsApp number (with country code, no +). Who’s runnin’ this show? 💪",
+      "required": true,
+      "value": "26777821911"
+    },
+    "OWNER_NAME": {
+      "description": "👑 Your name, the boss of * N *. Flex it in the bot’s credits! 😎",
+      "required": true,
+      "value": "N "
+    },
+    "PREFIX": {
+      "description": "🔠 Command trigger (e.g., ‘.’ for !ping). Keep it short or look like a clown! 🤡",
+      "required": true,
+      "value": "."
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
