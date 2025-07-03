@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: NjabuloJb
+    env: docker
+    region: Singapore
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node index.js"
+    dockerfilePath: ./Dockerfile
+    repo: https://github.com/NjabulJ/NjabuloJb
+    autoDeploy: true
+    envVars:
+      - key: SESSION_ID
+        sync: false
+        description: 🔐 Your bot’s session ID. Scan the QR code to get this or the bot won’t start!
+      - key: PORT
+        value: 3000
