@@ -1,7 +1,7 @@
 {
-  "name": "Njabulo-Jb",
+  "name": "NjabuloJb",
   "description": "⚡ A savage WhatsApp bot built to dominate P  N .",
-  "keywords": ["Njabulo", "WhatsApp Bot", "Multi-Device", "Savage"],
+  "keywords": ["NjabuloJb", "WhatsApp Bot", "Multi-Device", "Savage"],
   "repository": "https://github.com/NjabuloJ/Njabulo",
   "stack": "container",
   "env": {
