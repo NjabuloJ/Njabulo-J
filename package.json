@@ -1,15 +1,15 @@
 {
-  "name": "NjabuloJb",
+  "name": "Njabulo-J",
   "version": "10.8.1",
-  "description": "NjabuloJb multi device whatsapp bot",
+  "description": "Njabulo-J multi device whatsapp bot",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name NjabuloJb",
+    "start": "pm2 start index.js --deep-monitoring --attach --name Njabulo-J",
     "stop": "pm2 stop NjabuloJb",
-    "restart": "pm2 restart NjabuloJb"
+    "restart": "pm2 restart Njabulo-J"
   },
-  "keywords": ["NjabuloJb", "whatsapp-bot", "whatsapp md bot"],
+  "keywords": ["Njabulo-J", "whatsapp-bot", "whatsapp md bot"],
   "author": "NjabuloJ",
   "license": "ISC",
   "dependencies": {
