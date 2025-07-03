@@ -1,10 +1,10 @@
 services:
   - type: web
-    name: Njabulo
+    name: NjabuloJb
     env: docker
     region: Singapore
     plan: free
-    repo: https://github.com/NjabuloJ/Njabulo
+    repo: https://github.com/NjabuloJ/NjabuloJb
     autoDeploy: true 
     envVars:
       - key: SESSION_ID
