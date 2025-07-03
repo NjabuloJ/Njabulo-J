@@ -1,16 +1,16 @@
 {
-  "name": "Njabulo",
+  "name": "NjabuloJb",
   "version": "10.8.1",
-  "description": "Njabulo Jb multi device whatsapp bot",
+  "description": "NjabuloJb multi device whatsapp bot",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name Njabulo",
-    "stop": "pm2 stop Njabulo",
-    "restart": "pm2 restart Njabulo"
+    "start": "pm2 start index.js --deep-monitoring --attach --name NjabuloJb",
+    "stop": "pm2 stop NjabuloJb",
+    "restart": "pm2 restart NjabuloJb"
   },
-  "keywords": ["Njabulo", "whatsapp-bot", "whatsapp md bot"],
-  "author": "Marcas",
+  "keywords": ["NjabuloJB", "whatsapp-bot", "whatsapp md bot"],
+  "author": "NjabuloJ",
   "license": "ISC",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
